@@ -25,6 +25,37 @@
 - 降维算法 Dimensional Reduction
 - 梯度增强算法 Gradient Boosting
 
+### 深度强化学习（DRL）简介与常见算法（DQN，DDPG，PPO，TRPO，SAC）分类（https://blog.csdn.net/b_b1949/article/details/128997146）
+- 强化学习属于机器学习的一种，不同于监督学习和无监督学习，通过智能体与环境的不断交互(即采取动作)进而获得奖励，从而不断优化自身动作策略，以期待最大化其长期收益(奖励之和)。
+  强化学习特别适合序贯决策问题（涉及一系列有序的决策问题）。
+  在实际应用中，针对某些任务，我们往往无法给每个数据或者状态贴上准确的标签，但是能够知道或评估当前情况或数据是好还是坏，可以采用强化学习来处理。
+1.强化学习：
+1.1定义：智能体与环境的不断交互(即在给定状态采取动作)进而获得奖励，此时环境从一个状态转移到下一个状态。智能体通过不断优化自身动作策略，以期待最大化其长期回报或收益(奖励之和)。
+1.2强化学习的相关概念
+（1）状态 State (S): agent’s observation of its environment;
+（2）动作 Action (A): the approaches that agent interacts with the environment;
+（3）奖励 Reward (Rt): the bonus that agent get once it takes an action in the environment at the given time step t .回报（Return）为Agent所获得的奖励之和。
+（4）转移概率 Transistion Probability ( P ): the transition possibility that environment evolves from one state to another.
+     环境从一个状态转移到另一个状态，可以是确定性转移过程，也可以是随机性转移过程.
+（5）折扣因子 Discount factor ( γ \gammaγ ): to measure the importance of future reward to agent at the current state.
+（6）轨迹（Trajectory）是一系列的状态、动作、和奖励，可以表述为：τ = (S0, A0, R0, S1, A1, R1, . . . ) 
+     用轨迹τ来记录Agent如何和环境交互。轨迹的初始状态是从起始状态分布中随机采样得到的。
+     一条轨迹有时候也称为片段（Episode）或者回合，是一个从初始状态（Initial State，例如游戏的开局）到最终状态（Terminal State，如游戏中死亡或者胜利）的序列。
+（7）探索-利用的折中（Exploration-Exploitation Tradeoff）
+     这里，探索是指Agent通过与环境的交互来获取更多的信息，而利用是指使用当前已知信息来使得Agent的表现达到最佳，例如，贪心（greedy）策略。
+     同一时间，只能二者选一。因此，如何平衡探索和利用二者，以实现长期回报（Long-term Return）最大，是强化学习中非常重要的问题。
+因此，可以用（S，A，P，R，γ）来描述强化学习过程。
+1.3强化学习的数学建模
+
+2.深度强化学习：
+深度学习DL有很强的抽象和表示能力，特别适合建模RL中的值函数，例如：动作价值函数Qπ(s,a)。二者结合，极大地拓展了RL的应用范围。
+3.常见深度强化学习算法：
+深度强化学习的算法比较多，常见的有：DQN，DDPG，PPO，TRPO，A3C，SAC 等等。
+3.1
+
+
+
+
 
 ### 强化学习
 - 强化学习算法可以分为三大类：value based, policy based 和 actor critic。
