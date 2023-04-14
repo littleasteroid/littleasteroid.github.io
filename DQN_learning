@@ -92,13 +92,6 @@
       常见算法有：DDPG，Q-learning，DQN等。
 
 
-
-
-
-
-
-
-
 ### 强化学习
 - 强化学习算法可以分为三大类：value based, policy based 和 actor critic。
 - 常见的是以DQN为代表的value based算法，这种算法中只有一个值函数网络，没有policy网络；
